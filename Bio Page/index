@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="My bio page">
+    <meta name="author" content="Daniel Sullivan">
+    <title>My Bio Page</title>
+</head>
+<body>
+
+    <div id="nav">
+
+        <a href="#Bio">Bio |</a>
+        <a href="#Hobbies">Hobbies |</a>
+        <a href="#Schooling">Schooling |</a>
+        <a href="#footer">Footer</a>
+    
+    </div>
+
+<h1 id="header">Daniel Sullivan - About Me</h1>
+
+<section id="Bio">
+    <h2>Bio</h2>
+    <p>
+        Whats up im <strong>Daniel Sullivan</strong>, im 24, im from Massachusetts but i currently live in <u>West Warwick Rhode Island</u>
+        I lived overseas in Korea for 7 months in 2023. I'm an apsiring <em>Cyber Security Engineer</em>.
+    </p>
+
+
+</section>
+
+<hr />
+  <hr />
+
+<section id="Hobbies">
+    <h2>Hobbies</h2>
+        <ul>
+        
+        <img src="images/Billiards.jpg" alt="Billiards" width="300" height="200">
+        <li>Billiards</li>
+        <li>Hockey</li>
+        <li>Fishing</li>
+    </ul>
+</section>
+
+<section id="Schooling">
+    <h2>Schooling</h2>
+   <ol>
+        <img src="images/NEIT.jpg" alt="NEIT" width="300" height="200">
+       <li>Igo Elementry School (2007-2011)</li>
+       <li>John J. Ahern Middle School (2011-2015)</li>
+       <li>Foxborough High School (2015-2019)</li>
+       <li>Intellitec College Electrical (2024-2025)</li>
+       <li><b>THE</b> New England Institute of Technology (2025-...)</li>
+   </ol>
+</section>
+
+<h2>Link to more Info!</h2>
+<p><a href="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&fs=0">Click Here!</a></p>
+
+
+<div id="footer" role="contentinfo">
+    <a href="#header">Back to Top</a>
+</div>
