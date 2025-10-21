@@ -1,0 +1,22 @@
+html
+main{
+  font-family: fantasy, system-ui;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  background-image: image('images/stars.jpg');
+  background-size: cover;
+  height: 100px;
+}
+
+body{
+  height: 100%;
+  background-image: image('images/stars.jpg');
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+
