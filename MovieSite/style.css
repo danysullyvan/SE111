@@ -1,22 +1,61 @@
-html
-main{
+
+/* Global page setup */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
   font-family: fantasy, system-ui;
   font-size: 10px;
+  text-align: center;
+  background-image: url('images/stars.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #fff;
+}
+
+main {
   display: flex;
   justify-content: center;
-  background-image: image('images/stars.jpg');
-  background-size: cover;
-  height: 100px;
+  padding: 18px 12px;
 }
 
-body{
-  height: 100%;
-  background-image: image('images/stars.jpg');
-  background-size: cover;
-  text-align: center;
-  overflow: hidden;
+/* Navigation area */
+.tabs { padding: 12px 0; }
+.tabs nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 10px; justify-content: center; }
+.tabs nav ul li { margin: 0; }
+
+/* Consolidated link-button styles */
+.link-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 6px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.12);
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
+  transition: background-color 160ms ease, transform 120ms ease;
 }
 
+.link-button:visited { color: #fff; }
+.link-button:hover, .link-button:focus {
+  background-color: #555;
+  color: #fff;
+  transform: translateY(-2px);
+}
 
+/* Small responsive tweak */
+@media (max-width: 480px) {
+  .tabs nav ul { flex-direction: column; gap: 6px; }
+  .link-button { width: 100%; box-sizing: border-box; }
+}
 
 
