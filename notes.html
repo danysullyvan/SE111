@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="notes">
+    <meta name="author" content="Daniel Sullivan">
+    
+    <title>notes</title>
+    
+</head>
+
+<body>
+    <!-- Javascript is a loosely typed language -->
+    <script>
+        // AIDS 
+        var test = "hi";
+        console.log("The value of test is: " + test);
+        var test2 = 10;
+        console.log("The value of test2 is: " + test2);
+
+        var bool = true;
+        console.log("The value of bool is: " + bool);
+        
+        var x = 10; 
+        //x > (conditional operator)
+        // < less than
+        // >= greater than or equal to
+        // <= less than or equal to
+        // != not equal
+        // === same value and data type
+        // == same value
+        // logical operators
+        // && and
+        // || or
+        // ! not
+
+        if(x > 20 || x < 30)
+        {
+            console.log("x has passed conditions");
+        }
+
+        // ++
+        x++; // x = x + 1 adds 1 to x
+        x = x + 5 // adds 5 to x 
+        x += 5; // adds 5 to x
+
+        var y = 25;
+        x += y // adds y to x
+
+        var boolThing = true
+
+        console.log(x += boolThing); // converts boolThing to 1 and adds to x
+
+        //multiplying
+        x = x * 2
+        x *= 2; // multiplies x by 2
+
+        //shorthand 
+
+        function doSomething()
+        {
+            console.log("Doing something");
+        }
+
+        doSomething();
+
+
+        function add(numOne, numTwo)
+        {
+            //console.log(numOne + numTwo);
+            return numOne + numTwo;
+        }
+
+        console.log(add(20,55));
+
+        // Displays a banner of the result
+        alert(add(69,69));
+
+        var name = prompt("Enter your name: ");
+        console.log("Hello " + name);
+
+        alert(name + " You have aids!");
+
+        var wayOne = 'hi';
+        var wayTwo = "hello";
+        
+        if (x > 20) {
+            console.log("x is greater than 20");
+        } else if (x === 10) {
+            console.log("x is equal to 10");
+        } else {
+            console.log("x is less than or equal to 20 and not equal to 10");
+        }
+
+        var addedStrings = "This is string 1" + " and this is string 2.";
+        console.log(addedStrings);
+
+        var name = "Dan"
+        var num = 10
+        //Add to strings
+        console.log(num+name); //10Dan
+
+        var numberStrinng = "123456e7890"
+        var conversion = Number(numberString);
+        var backConversion = String(conversion);
+        console.log(backConversion); // "1234567890"
+        console.log(conversion); //1234567890
+
+        if(typeof conversion === "number")
+        {
+            console.log(true);
+            
+            console.log("My favorite show is" + name + num)
+
+            //string literal
+            var tvshow = `Hi i really like ${name} ${num}`;
+            console.log(tvshow);
+        }
+
+
+
+    </script>
+
+</body>
+
