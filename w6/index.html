@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="calc">
+    <meta name="author" content="Daniel Sullivan">
+    
+    <title>calc</title>
+    
+</head>
+
+<body>
+    <script>
+        
+        calc();
+
+        function calc() {
+            
+            var hourlyPay = Number(prompt("Enter your hourly pay: "));
+            var hoursPerWeek = Number(prompt("Enter hours worked per week: "));
+            var taxRate = Number(prompt("Enter tax rate (as %): "));
+            
+            var grossPay = hourlyPay * hoursPerWeek * 2;
+            var uncleSamShare = grossPay * (taxRate / 100);
+            var netPay = grossPay - uncleSamShare;
+            
+            console.log("Gross Pay: $" + grossPay.toFixed(2));
+            console.log("Uncle Sam's Share: $" + uncleSamShare.toFixed(2));
+            console.log("Net Pay: $" + netPay.toFixed(2));
+
+            alert(
+                document.write(
+                    "Paycheck Summary (Two Weeks):\n\n<br><br>" +
+                    "Gross Pay: $" + grossPay.toFixed(2) + "\n<br><br>" +
+                    "Uncle Sam's Share: $" + uncleSamShare.toFixed(2) + "\n<br><br>" +
+                    "Net Pay: $" + netPay.toFixed(2)
+                )
+            );
+        }
+    </script>
+</body>
+</html>
